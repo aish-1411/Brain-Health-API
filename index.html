@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Health Monitoring API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .api-scenario {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .api-scenario h2 {
+            color: #333;
+        }
+        .endpoint {
+            font-style: italic;
+            color: #555;
+        }
+        .key-data label {
+            display: block;
+            margin-top: 8px;
+        }
+        .key-data input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Brain Health Monitoring and Analysis</h1>
+
+<!-- Scenario 1 -->
+<div class="api-scenario">
+    <h2>1. Cognitive Function Test Submission</h2>
+    <p><strong>Description:</strong> Submit cognitive function test results.</p>
+    <p class="endpoint">Endpoint: POST /brain-health/cognitive-test</p>
+    <div class="key-data">
+        <label for="user-id1">User ID:</label>
+        <input type="text" id="user-id1" name="user-id1">
+        <label for="test-type">Test Type (e.g., memory, attention):</label>
+        <input type="text" id="test-type" name="test-type">
+        <label for="test-score">Test Score:</label>
+        <input type="text" id="test-score" name="test-score">
+        <label for="time-taken">Time Taken (minutes):</label>
+        <input type="text" id="time-taken" name="time-taken">
+    </div>
+    <button class="submit-btn">Submit Test Results</button>
+</div>
+
+<!-- Scenario 2 -->
+<div class="api-scenario">
+    <h2>2. Cognitive Decline Risk Assessment</h2>
+    <p><strong>Description:</strong> Assess risk of cognitive decline.</p>
+    <p class="endpoint">Endpoint: POST /brain-health/decline-risk</p>
+    <div class="key-data">
+        <label for="user-id2">User ID:</label>
+        <input type="text" id="user-id2" name="user-id2">
+        <label for="lifestyle-factors">Lifestyle Factors (e.g., diet, exercise):</label>
+        <input type="text" id="lifestyle-factors" name="lifestyle-factors">
+        <label for="medical-history">Medical History:</label>
+        <input type="text" id="medical-history" name="medical-history">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+        <label for="family-history">Family History:</label>
+        <input type="text" id="family-history" name="family-history">
+    </div>
+    <button class="submit-btn">Assess Risk</button>
+</div>
+
+<!-- Scenario 3 -->
+<div class="api-scenario">
+    <h2>3. Brain Health Score Calculation</h2>
+    <p><strong>Description:</strong> Calculate an overall brain health score.</p>
+    <p class="endpoint">Endpoint: GET /brain-health/score</p>
+    <div class="key-data">
+        <label for="user-id3">User ID:</label>
+        <input type="text" id="user-id3" name="user-id3">
+        <label for="mental-health-data">Mental Health Data:</label>
+        <input type="text" id="mental-health-data" name="mental-health-data">
+        <label for="sleep-patterns">Sleep Patterns:</label>
+        <input type="text" id="sleep-patterns" name="sleep-patterns">
+        <label for="stress-levels">Stress Levels:</label>
+        <input type="text" id="stress-levels" name="stress-levels">
+    </div>
+    <button class="submit-btn">Calculate Score</button>
+</div>
+
+<!-- Scenario 4 -->
+<div class="api-scenario">
+    <h2>4. Mental Fatigue Monitoring</h2>
+    <p><strong>Description:</strong> Monitor mental fatigue levels.</p>
+    <p class="endpoint">Endpoint: GET /brain-health/mental-fatigue</p>
+    <div class="key-data">
+        <label for="user-id4">User ID:</label>
+        <input type="text" id="user-id4" name="user-id4">
+        <label for="daily-activity-levels">Daily Activity Levels:</label>
+        <input type="text" id="daily-activity-levels" name="daily-activity-levels">
+        <label for="cognitive-test-results">Cognitive Test Results:</label>
+        <input type="text" id="cognitive-test-results" name="cognitive-test-results">
+    </div>
+    <button class="submit-btn">Monitor Fatigue</button>
+</div>
+
+<!-- Scenario 5 -->
+<div class="api-scenario">
+    <h2>5. Sleep and Brain Health Correlation Analysis</h2>
+    <p><strong>Description:</strong> Analyze sleep patterns to correlate with brain health.</p>
+    <p class="endpoint">Endpoint: POST /brain-health/sleep-analysis</p>
+    <div class="key-data">
+        <label for="user-id5">User ID:</label>
+        <input type="text" id="user-id5" name="user-id5">
+        <label for="sleep-patterns2">Sleep Patterns:</label>
+        <input type="text" id="sleep-patterns2" name="sleep-patterns2">
+        <label for="cognitive-test-scores">Cognitive Test Scores:</label>
+        <input type="text" id="cognitive-test-scores" name="cognitive-test-scores">
+    </div>
+    <button class="submit-btn">Analyze Sleep Correlation</button>
+</div>
+
+<!-- Scenario 6 -->
+<div class="api-scenario">
+    <h2>6. Mood and Cognitive Function Tracking</h2>
+    <p><strong>Description:</strong> Track daily mood and cognitive function.</p>
+    <p class="endpoint">Endpoint: POST /brain-health/mood-cognitive-tracking</p>
+    <div class="key-data">
+        <label for="user-id6">User ID:</label>
+        <input type="text" id="user-id6" name="user-id6">
+        <label for="daily-mood-scores">Daily Mood Scores:</label>
+        <input type="text" id="daily-mood-scores" name="daily-mood-scores">
+        <label for="stress-levels2">Stress Levels:</label>
+        <input type="text" id="stress-levels2" name="stress-levels2">
+    </div>
+    <button class="submit-btn">Track Mood and Cognitive Function</button>
+</div>
+
+<!-- Scenario 7 -->
+<div class="api-scenario">
+    <h2>7. Brain Health Intervention Suggestions</h2>
+    <p><strong>Description:</strong> Receive suggestions to improve brain health.</p>
+    <p class="endpoint">Endpoint: GET /brain-health/interventions</p>
+    <div class="key-data">
+        <label for="user-id7">User ID:</label>
+        <input type="text" id="user-id7" name="user-id7">
+        <label for="brain-health-score2">Brain Health Score:</label>
+        <input type="text" id="brain-health-score2" name="brain-health-score2">
+        <label for="lifestyle-data">Lifestyle Data:</label>
+        <input type="text" id="lifestyle-data" name="lifestyle-data">
+    </div>
+    <button class="submit-btn">Get Intervention Suggestions</button>
+</div>
+
+<!-- Scenario 8 -->
+<div class="api-scenario">
+    <h2>8. Brain Health Decline Alerts</h2>
+    <p><strong>Description:</strong> Receive alerts for potential cognitive decline.</p>
+    <p class="endpoint">Endpoint: GET /brain-health/decline-alerts</p>
+    <div class="key-data">
+        <label for="user-id8">User ID:</label>
+        <input type="text" id="user-id8" name="user-id8">
+        <label for="brain-health-score3">Brain Health Score:</label>
+        <input type="text" id="brain-health-score3" name="brain-health-score3">
+    </div>
+    <button class="submit-btn">Check for Decline Alerts</button>
+</div>
+
+<!-- Scenario 9 -->
+<div class="api-scenario">
+    <h2>9. Brain Health
+        
